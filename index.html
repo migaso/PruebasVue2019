@@ -10,8 +10,8 @@
 <body>
     
     <div id="app">
-        <h1 v-text="mensaje"></h1>
-        <input type="text" v-model="mensaje">
+        <h1 v-text="mensaje"></h1> <!-- se utiliza v-text para evitar que DOM imprima la variable antes de ser modificada por VueJs -->
+        <input type="text" v-model="mensaje"> <!-- se utiliza v-model para para crear un relacion entre la variable v-text y hacer la reactividad -->
     </div>
 
 </body>
